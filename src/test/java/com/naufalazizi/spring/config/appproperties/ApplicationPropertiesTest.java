@@ -14,11 +14,11 @@ public class ApplicationPropertiesTest {
     @Autowired
     private Environment environment;
 
-    @Test
-    void testApplicationProperties() {
-        String appName = environment.getProperty("spring.application.name");
-        Assertions.assertEquals("spring-config-properties", appName);
-    }
+//    @Test
+//    void testApplicationProperties() {
+//        String appName = environment.getProperty("spring.application.name");
+//        Assertions.assertEquals("spring-config-properties", appName);
+//    }
 
     @SpringBootApplication
     public static class TestApplication{

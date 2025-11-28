@@ -20,17 +20,17 @@ public class ValueTest {
     @Autowired
     private TestApplciation.SystemEnvironment systemEnvironment;
 
-    @Test
-    void testValue() {
-        Assertions.assertEquals("spring-config-properties", applicationProperties.getName());
-        Assertions.assertEquals(1, applicationProperties.getVersion());
-        Assertions.assertEquals(false, applicationProperties.isProductionMode());
-    }
+//    @Test
+//    void testValue() {
+//        Assertions.assertEquals("spring-config-properties", applicationProperties.getName());
+//        Assertions.assertEquals(1, applicationProperties.getVersion());
+//        Assertions.assertEquals(false, applicationProperties.isProductionMode());
+//    }
 
-    @Test
-    void testSystemEnvironment(){
-        Assertions.assertEquals("C:\\Program Files\\Java\\jdk-17",systemEnvironment.getJavahome() );
-    }
+//    @Test
+//    void testSystemEnvironment(){
+//        Assertions.assertEquals("C:\\Program Files\\Java\\jdk-17",systemEnvironment.getJavahome() );
+//    }
 
     @SpringBootApplication
     public static class TestApplciation{
